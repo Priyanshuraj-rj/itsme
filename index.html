@@ -3,48 +3,144 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
+/* Global styles */
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
-.header {
+/* Header styles */
+header {
 	background-color: #333;
 	color: #fff;
-	padding: 20px;
-	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
 }
 
-.nav {
-	background-color: #f2f2f2;
-	overflow: hidden;
+.header-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
 }
 
-.nav a {
-	float: left;
-	display: block;
-	color: #333;
-	text-align: center;
-	padding: 14px 16px;
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
 	text-decoration: none;
 }
 
-.nav a:hover {
-	background-color: #ddd;
-	color: #333;
+nav a:hover {
+	color: #ddd;
 }
 
-.content {
-	padding: 20px;
+/* Hero section styles */
+.hero-section {
+	background-color: #f2f2f2;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
 }
 
-.footer {
+.hero-wrapper {
+	max-width: 600px;
+}
+
+.hero-section h2 {
+	margin-bottom: 20px;
+}
+
+.hero-section p {
+	margin-bottom: 30px;
+}
+
+.cta-button {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+
+.cta-button:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+/* Features section styles */
+.features-section {
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.features-wrapper {
+	max-width: 800px;
+}
+
+.feature-item {
+	flex: 1;
+	margin: 20px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	text-align: center;
+	transition: all 0.2s ease-in-out;
+}
+
+.feature-item:hover {
+	transform: scale(1.1);
+}
+
+.feature-item i {
+	font-size: 3em;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.feature-item h3 {
+	margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
 	background-color: #333;
 	color: #fff;
 	padding: 20px;
 	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.footer-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 	</style>
